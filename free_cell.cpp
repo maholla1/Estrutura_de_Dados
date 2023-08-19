@@ -4,7 +4,7 @@ using namespace std;
 
 Stack::Stack()
 {
-    Entry[top] = 0;
+    top = 0;
 }
 
 // Stack::~Stack(){
@@ -14,7 +14,7 @@ Stack::Stack()
 
 bool Stack::Full()
 {
-    return Entry[top] = MaxStack;
+    return top == MaxStack;
 }
 
 bool Stack::Empty()
@@ -32,6 +32,7 @@ void Stack::Push(int x)
     }
     top++;
     Entry[top] = x;
+
     cout << "Elemento " << x << " inserido." << endl;
 }
 
