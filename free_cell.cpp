@@ -32,6 +32,10 @@ void Stack::Push(int x)
     }
     top++;
     Entry[top] = x;
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 }
 
 void Stack::Pop(int &x)
