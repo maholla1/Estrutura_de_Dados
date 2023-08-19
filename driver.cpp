@@ -6,11 +6,8 @@ int main()
 {
 
     Stack Pilha1;
-    cout << Pilha1.Full() << endl;
-    cout << Pilha1.Empty();
 
     Pilha1.Push(10);
 
-    Stack Pilha1;
-    cout << Pilha1.Empty();
+   
 }

@@ -14,7 +14,7 @@ Stack::Stack()
 
 bool Stack::Full()
 {
-    return Entry[top]= MaxStack;
+    return Entry[top] = MaxStack;
 }
 
 bool Stack::Empty()
@@ -24,7 +24,7 @@ bool Stack::Empty()
 
 void Stack::Push(int x)
 {
- 
+
     if (Full())
     {
         cout << "A pilha esta cheia! Elemento " << x << " nao inserido." << endl;
@@ -32,10 +32,7 @@ void Stack::Push(int x)
     }
     top++;
     Entry[top] = x;
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
+    cout << "Elemento " << x << " inserido." << endl;
 }
 
 void Stack::Pop(int &x)
