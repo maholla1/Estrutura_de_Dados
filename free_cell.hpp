@@ -6,15 +6,16 @@ class Stack{
 
     public:
     Stack();
-    ~Stack();
+    // ~Stack();
     bool Full();
     bool Empty();
     void Push(int x);
     void Pop(int &x);
     void Top(int &x);
-
+    void preencherVetor();
 
     private:
     int top;
     int Entry[MaxStack+1];
+    
 };

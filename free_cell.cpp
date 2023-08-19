@@ -7,10 +7,10 @@ Stack::Stack(){
     top=0;
 }
 
-Stack::~Stack(){
+// Stack::~Stack(){
 
-    cout << "Chamado destrutor da pilha" << endl;
-}
+//     cout << "Chamado destrutor da pilha" << endl;
+// }
 
 bool Stack::Full(){
     return top = MaxStack;
@@ -19,17 +19,18 @@ bool Stack::Full(){
 
 bool Stack::Empty(){
     return top==0;
+    cout << "A pilha esta vazia" << endl;
 }
 
 void Stack::Push(int x){
     
     if(Full()){
-        cout << "A pilha esta cheia! Elemento " << x << "nao inserido." << endl;
+        cout << "A pilha esta cheia! Elemento " << x << " nao inserido." << endl;
         return; //encerra apenas a função
     }
     top++;
     Entry[top] = x;
-
+    
 }
 
 void Stack::Pop(int &x){
